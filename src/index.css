@@ -2,3 +2,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.flexMainContent {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.generatorBox{
+ width: 18em;
+ height: 15em; 
+ 
+}
+
+.favouritesButton{
+    width:23em;
+    height: 2.5em;
+}
+
+.mainContentDiv {
+    width: auto;
+    height: 5em;
+}
+
+.rounded{
+    width: 8em;
+    height: 5em;
+}

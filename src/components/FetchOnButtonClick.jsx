@@ -18,13 +18,17 @@ function FetchOnButtonClick() {
   };
 
   return (
-    <div>
+    <div className="flexMainContent">
       <button
         onClick={handleClick}
         className="rounded bg-rose-500 text-sky-300 font-light hover:bg-sky-500 hover:text-rose-500 active:bg-amber-500 active:text-green-600"
       >
         Activity Generator button
       </button>
+
+      <div className="generatorBox sm:flex border-dashed border-2 border-sky-500"> 
+      <div className="favouritesButton"><button></button></div>
+      </div>
     </div>
   );
 }

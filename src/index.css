@@ -19,21 +19,23 @@
 
 .generatorBox{
  width: 18em;
- height: 15em; 
- 
+ height: 15em;  
 }
 
 .favouritesButton{
     width:23em;
     height: 2.5em;
+    padding:none;
 }
 
 .mainContentDiv {
     width: auto;
     height: 5em;
+    padding-bottom: 6em;
 }
 
 .rounded{
     width: 8em;
     height: 5em;
 }
+

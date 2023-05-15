@@ -20,12 +20,17 @@
 .generatorBox{
  width: 18em;
  height: 15em;  
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ padding-left: 0.8em;
 }
 
 .favouritesButton{
-    width:23em;
+    width:18em;
     height: 2.5em;
     padding:none;
+    justify-self: end;
 }
 
 .mainContentDiv {

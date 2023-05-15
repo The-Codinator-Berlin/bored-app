@@ -26,12 +26,28 @@ function FetchOnButtonClick() {
         Activity Generator button
       </button>
 
-    <div className="generatorBox sm:flex border-dashed border-2 border-sky-500"> 
-      <h5><span className="text-sky-500">Activity</span>:&nbsp;{RandomActivity.activity}</h5>
-      <h5><span className="text-sky-500">Participants</span>:&nbsp;{RandomActivity.participants}</h5>
-      <h5><span className="text-sky-500">Price</span>:&nbsp;{RandomActivity.price}</h5>
-      <h5><span className="text-sky-500">Type</span>:&nbsp;{RandomActivity.type}</h5>
-      {/* <div className="favouritesButton"><button></button></div> */}
+      <div className="generatorBox sm:flex border-dashed border-2 border-sky-500">
+        <h5>
+          <span className="text-sky-500">Activity</span>:&nbsp;
+          {RandomActivity.activity}
+        </h5>
+        <h5>
+          <span className="text-sky-500">Participants</span>:&nbsp;
+          {RandomActivity.participants}
+        </h5>
+        <h5>
+          <span className="text-sky-500">Price</span>:&nbsp;
+          {RandomActivity.price}
+        </h5>
+        <h5>
+          <span className="text-sky-500">Type</span>:&nbsp;{RandomActivity.type}
+        </h5>
+        <div className="favouritesButtonBox">
+          <button className="favouritesButton">
+            <span class="material-symbols-outlined text-3xl">favorite</span>
+          </button>
+          <h6>Add to favourites!</h6>
+        </div>
       </div>
     </div>
   );

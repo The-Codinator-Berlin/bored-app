@@ -2,16 +2,16 @@ import { useState } from "react";
 import "../index.css";
 
 function FetchOnButtonClick() {
-  const [data, setData] = useState(false);
+  const [RandomActivity, setRandomActivity] = useState(false);
 
   const handleClick = async () => {
     let url = "http://www.boredapi.com/api/activity/";
     // console.log("url :>> ", url);
     try {
       const response = await fetch(url);
-      const responseData = await response.json();
-      console.log(data);
-      setData(responseData);
+      const responseRandomActivity = await response.json();
+      console.log(RandomActivity);
+      setRandomActivity(responseRandomActivity);
     } catch (error) {
       console.log("error :>> ", error);
     }
@@ -26,8 +26,12 @@ function FetchOnButtonClick() {
         Activity Generator button
       </button>
 
-      <div className="generatorBox sm:flex border-dashed border-2 border-sky-500"> 
-      <div className="favouritesButton"><button></button></div>
+    <div className="generatorBox sm:flex border-dashed border-2 border-sky-500"> 
+      <h5><span className="text-sky-500">Activity</span>:&nbsp;{RandomActivity.activity}</h5>
+      <h5><span className="text-sky-500">Participants</span>:&nbsp;{RandomActivity.participants}</h5>
+      <h5><span className="text-sky-500">Price</span>:&nbsp;{RandomActivity.price}</h5>
+      <h5><span className="text-sky-500">Type</span>:&nbsp;{RandomActivity.type}</h5>
+      {/* <div className="favouritesButton"><button></button></div> */}
       </div>
     </div>
   );

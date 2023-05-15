@@ -44,7 +44,7 @@ function FetchOnButtonClick() {
         </h5>
         <div className="favouritesButtonBox">
           <button className="favouritesButton">
-            <span class="material-symbols-outlined text-3xl">favorite</span>
+            <span className="material-symbols-outlined text-3xl">favorite</span>
           </button>
           <h6>Add to favourites!</h6>
         </div>

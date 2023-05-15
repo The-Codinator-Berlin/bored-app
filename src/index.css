@@ -23,14 +23,24 @@
  display: flex;
  flex-direction: column;
  justify-content: space-around;
- padding-left: 0.8em;
+ padding: 0.2em;
 }
 
-.favouritesButton{
-    width:18em;
+.favouritesButtonBox{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
     height: 2.5em;
-    padding:none;
-    justify-self: end;
+    padding-bottom: 1em;
+}
+
+.favouritesButton:hover{
+    color: royalblue;
+}
+
+.favouritesButton:active{
+    color: orange;
 }
 
 .mainContentDiv {
@@ -43,4 +53,3 @@
     width: 8em;
     height: 5em;
 }
-
